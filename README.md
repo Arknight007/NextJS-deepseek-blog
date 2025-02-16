@@ -21,7 +21,7 @@ This project demonstrates consuming DeepSeek APIs and utilizing R1 Distill AI mo
 1. Clone this repository
 
 ```shell
-git clone https://github.com/WillACosta/nextjs-openai-blog
+git clone https://github.com/Arknight007/NextJS-deepseek-blog
 ```
 
 2. Make sure you have all environment variables set, before running the project, run the following command to copy the env file, and then fill in your credentials.
