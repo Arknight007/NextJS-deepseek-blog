@@ -1,0 +1,115 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    @apply font-heading font-bold;
+  }
+
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    @apply my-7;
+  }
+
+  h1 {
+    @apply text-4xl mb-14;
+  }
+
+  h2 {
+    @apply text-3xl;
+  }
+
+  h3 {
+    @apply text-2xl;
+  }
+
+  h4 {
+    @apply text-xl;
+  }
+
+  h5 {
+    @apply text-lg;
+  }
+
+  ul,
+  ol {
+    @apply my-4;
+  }
+
+  ul {
+    list-style: disc;
+  }
+
+  ol {
+    list-style-type: decimal;
+  }
+
+  li {
+    @apply my-2;
+  }
+
+  p {
+    @apply my-2;
+  }
+
+  input,
+  button {
+    @apply outline-purple-100;
+  }
+}
+
+@layer components {
+  .btn {
+    @apply bg-primary text-white cursor-pointer rounded-full hover:bg-primary/80 transition-colors flex flex-col items-center justify-center w-full px-5 py-3.5 disabled:bg-zinc-300 disabled:text-gray-500 disabled:cursor-not-allowed;
+  }
+
+  .link {
+    @apply text-gray-700 hover:underline;
+  }
+
+  .field {
+    @apply w-[300px] md:w-[500px] lg:w-[700px] rounded-lg p-4 bg-zinc-100 flex-grow-[2];
+  }
+}
+
+@layer utilities {
+  @variants responsive {
+    .masonry {
+      column-gap: 1.5em;
+      column-count: 1;
+    }
+
+    .masonry-sm {
+      column-gap: 1.5em;
+      column-count: 2;
+    }
+
+    .masonry-md {
+      column-gap: 1.5em;
+      column-count: 3;
+    }
+
+    .masonry-lg {
+      column-gap: 1.5em;
+      column-count: 4;
+    }
+
+    .masonry-xl {
+      column-gap: 1.5em;
+      column-count: 4;
+    }
+
+    .break-inside {
+      break-inside: avoid;
+    }
+  }
+}
