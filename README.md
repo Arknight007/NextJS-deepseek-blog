@@ -4,7 +4,7 @@ This project demonstrates consuming DeepSeek APIs and utilizing R1 Distill AI mo
 ### Screenshots
 
 <br/>
-  <img src="docs/images/mobile_screenshot.png"/>
+  <img src="docs/images/mobile_screenshots.png"/>
 <br/>
 
 ### Technical Resources
